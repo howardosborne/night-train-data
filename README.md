@@ -25,3 +25,4 @@ There are several options for updating the data
 - [classes](https://script.google.com/macros/s/AKfycbwY9zNQFq0urCHsTstWRKxLe0SstWrwyY04tSuDIVb_yRCtTs_HDlRARS-5fqltgEZr/exec?table=classes)
 
 When you have the data, upload using the GitHub user interface.
+For further details on using the GitHub user interface see this article: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files

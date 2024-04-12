@@ -1,8 +1,8 @@
 name: Daily update from GSheet
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 4 * * *'
-  workflow_dispatch:
 
 jobs:
   update:

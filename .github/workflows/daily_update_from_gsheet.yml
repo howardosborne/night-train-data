@@ -3,7 +3,7 @@ name: Daily update from GSheet
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '30 2,14 * * *'
 
 permissions:
   contents: write

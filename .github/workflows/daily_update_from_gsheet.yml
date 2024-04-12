@@ -1,8 +1,8 @@
+name: Daily update from GSheet
 on:
   schedule:
     - cron: '0 4 * * *'
   workflow_dispatch:
-  push:
 
 jobs:
   update:
@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: 3.11
 
+      - name: Install dependencies
+        run: pip3 install --user requests
+
       - name: Get snapshot from GSheet
-        run: python scripts/get_snapshot.py
+        run: python3 scripts/get_snapshot.py
 
       - name: Update Git repository
         run: git add data/ && git commit -m "Auto update $(date +'%Y-%m-%d')" && git push origin ${GITHUB_REF_NAME}

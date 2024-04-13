@@ -32,5 +32,5 @@ jobs:
           git config user.name "Auto updater"
           git config user.email github-actions@github.com
           git add data/
-          git commit -m "Auto update $(date +'%Y-%m-%d')" 
+          git commit -m "Auto update $(date +'%Y-%m-%d')" || true
           git push origin ${GITHUB_REF_NAME}
